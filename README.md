@@ -16,4 +16,4 @@ Results are displayed in a React app.
 
 ## Live
 
-[brif.live](https://trie-react.web.app)
+[DEMO](https://trie-react.web.app)
