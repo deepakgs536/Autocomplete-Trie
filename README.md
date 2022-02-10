@@ -1,10 +1,11 @@
-# A Trie - AutoComplete Implemenatation with ReactJS
+# A Trie - AutoComplete Implementation with ReactJS
 
 This project is to show how to implement Trie data structure with JavaScript from scratch.
 
-Automcomplete method produces suggestions. Suggestions are shown in alphabetical order.
+Autocomplete method produces suggestions. Suggestions are shown in alphabetical order.
 
 Results are displayed in a React app.
+
 
 
 
@@ -14,6 +15,6 @@ Results are displayed in a React app.
 
 
 
-## Live
+## DEMO
 
-[DEMO](https://trie-react.web.app)
+[TRIE](https://trie-react.web.app)
