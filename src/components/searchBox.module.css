@@ -3,21 +3,95 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 100px; */
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.Header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #3f4454;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.countContainer {
+    position: absolute;
+    top: 0;
+    right: -40%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.countHeader {
+    color: #3f4454;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.countInput {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none; /* Fixed border property */
+    background: transparent;
+    color: #171A1C;
+    font-weight: 600;
+    font-size: 16px;
+    outline: none;
+    width: 50px;
+    border:1px solid #ff7014; 
+    border-radius: 12px;
+}
+
+/* Removes the background of number input arrows */
+.countInput::-webkit-inner-spin-button,
+.countInput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    background: transparent;
+    color: transparent; /* Makes arrows invisible */
 }
 
 .InnerContainer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #fff;
+    background-color: white;
+    border: 1px solid #ff7014;
     width: 500px;
-    height: 45px;
-    /* border-radius: 18px; */
+    height: 44px;
+    border-radius: 12px;
+    border-width: 2;
+    margin-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
 }
 
 .SC {
-    border-radius: 18px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 8px 0px #15151514;
 }
 
 .Input {
@@ -29,7 +103,9 @@
     justify-content: center;
     align-items: center;
     /* border: 1px solid black; */
-    color: #000;
+    background-color: transparent;
+    color: #171A1C;
+    opacity: 0.8;
     font-size: 1em;
     font-weight: 500;
 }
@@ -46,9 +122,18 @@
 
 .ResultBox {
     display: flex;
-    margin-left: 10%;
-    padding-bottom: 12px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #f4f4f4;
-    width: 80%;
+    color: #32383E;
+    padding: 10px;
+    background: transparent;
+    width: 96%;
+    /* hover : {
+    border-radius:12px
+    border: 2;
+    border-color: orange;
+    } */
+}
+.ResultBox:hover {
+    background: #FFEFE5;
+    border-radius: 10px;
+    border: 1px solid #FF7014; /* Border width, style, and color should be combined */
 }

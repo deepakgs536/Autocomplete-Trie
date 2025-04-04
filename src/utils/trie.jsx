@@ -6,14 +6,12 @@ class Node {
     }
 }
 
-
 export default class Trie {
 
     constructor(){
         this.root = new Node('');
         this.suggestions = [];
     }
-
 
     insert(word) {
         let currentNode = this.root;
